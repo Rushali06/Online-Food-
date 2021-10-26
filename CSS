@@ -1,0 +1,491 @@
+
+
+/*header design*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+html {
+    background-color: white;
+    color: dimgrey;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+
+    margin: 0 auto;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(IMG/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: floralwhite;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    color: red;
+    border: 1px solid red;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid red;
+    color: red;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: red;
+    color: white;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color: red;
+    color: white;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 8px, 0;
+    color: red;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90%;
+    text-decoration: none;
+    border-bottom: 2px solid red transparent;
+    transition: border-bottom 2s;  
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid red;
+}
+
+
+/* feature section*/
+
+section{
+    padding: 85px 0;
+}
+
+h2{
+    font-size: 185%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2::after{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.get-text{
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+    margin-bottom: 30px;
+
+}
+
+h3{
+    font-weight: 300;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 11px;
+}
+
+.all p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: left;
+    
+}
+
+ion-icon{
+    color: red;
+    font-size: 350%;
+    margin: 10px 0;
+}
+
+/*section meals showcase*/
+
+.section-food{
+    padding: 0;
+}
+
+.food-img{
+    list-style: none;
+    width: 100%;
+}
+
+.food-img li{
+    width: 25%;
+    float: left;
+}
+
+.menu{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.menu img:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/*how to work*/
+
+.section-steps{
+    background-color: rgb(235, 217, 217);
+}
+
+.step-box:first-child{
+    text-align: right;
+    padding-right: 4%;
+    margin-top: 30px;
+}
+
+.step-box:last-child{
+    padding-left: 4%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    color: red;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+
+    margin-right: 25px;
+
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*cities*/
+
+.City-features ion-icon{
+    color: red;
+    font-size: 110%;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.City-features{
+    margin-bottom: 5px;
+}
+
+a:link,
+a:visited{
+    color: #1b9cfc;
+    text-decoration: none;
+
+    border-bottom: 1px solid;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: brown;
+    border-bottom: 1px solid transparent;
+}
+
+/*customer feed*/
+
+.customer-feed{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(IMG/Hummus-Recipe.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+
+
+/*meals plan*/
+
+.meals-plan{
+    background-color: rgb(214, 98, 98);
+}
+
+.plan-box{
+    background-color: rgb(252, 250, 250);
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px rgb(247, 242, 242);
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid rgb(241, 234, 234);
+    margin-bottom: 10px;
+}
+
+.subs-price{
+    font-size: 280%;
+    margin-bottom: 10px;
+    color: darkred; 
+}
+
+.subs-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.subs-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box ul li ion-icon{
+    font-size: medium;
+    margin-right: 5px;
+    color: rgb(180, 33, 33);
+    
+
+    
+}
+
+.plan-box div:first-child{
+    background-color: ghostwhite;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.plan-box:last-child{
+    text-align: left;
+    border: 0;
+}
+
+/*form*/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+
+
+/*footer section*/
+
+footer ion-icon{
+    color: rgb(80, 79, 79);
+    font-size: 160%;
+}
+
+footer ion-icon:hover{
+    color: rgb(243, 49, 49);
+    transition: color 0.2s;
+}
+
+footer{
+    background-color: #1e272e;
+    padding: 50px;
+}
+
+.footer-nav{
+    margin-bottom: 30px;
+    list-style: none;
+    float: left;
+    margin-top: 10px;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+
+    text-decoration: none;
+    border: none;
+    color: #555;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: rgb(206, 56, 56);
+    transition: color 0.02s;
+}
+
+.social-links li a:hover,
+.social-links li a:active{
+    color: rgb(243, 26, 26);
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+}
